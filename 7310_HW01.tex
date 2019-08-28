@@ -1,0 +1,134 @@
+\documentclass[11pt]{cubouldpset}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{eucal}
+\usepackage{mathtools}
+\usepackage{color,soul}
+\usepackage{eucal}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\newcommand{\collaborators}[1]{\textbf{Collaborators: #1}}
+
+    
+\name{}
+\class{PHYS 7310}
+\assignment{HW01}
+\duedate{6 September 2019}
+
+
+\begin{document}
+
+\problemlist{Jackson 1.10, 1.12, 1.13, 1.17, 1.19}
+\collaborators{Caitlin Cash}
+
+\begin{problem}[1.10 (5 points)] 
+
+Prove the \textit{mean value theorem}: For charge-free space the value of the electrostatic potential at any point is equal to the average of the potential over the surface of \textit{any} sphere centered on that point.
+\newline
+\newline
+\textit{Instructor Note: Note that this is only true if there is no charge inside the sphere!}
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\newpage
+
+\begin{problem}[1.12 (5 points)] 
+
+Prove \textit{Green's reciprocation theorem}: If $\Phi$ is the potential due to a volume-charge density $\rho$ within a volume $V$ and a surface-charge density $\sigma$ on the conducting surface $S$ bounding the volume $V$, while $\Phi^\prime$ is the potential due to another charge distribution $\rho^\prime$ and $\sigma^\prime$, then
+$$\int_V \rho\Phi^\prime\ d^3x + \int_S \sigma \Phi^\prime\ da = \int_V \rho^\prime \Phi\ d^3x + \int_S \sigma^\prime \Phi\ da$$
+\newline
+\textit{Instructor Note: This is needed for the next part!}
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\newpage
+
+\begin{problem}[1.13 (10 points)] 
+
+Two infinite grounded parallel conducting planes are separated by a distance $d$. A point charge $q$ is placed between the planes. Use the reciprocation theorem of Green to prove that the total induced charge on one of the planes is equal to $(-q)$ times the fractional perpendicular distance of the point charge from the other plane.
+\newline
+(\textit{Hint:} As your comparison electrostatic problem with the same surfaces choose one whose charge densities and potential are known and simple.)
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\newpage
+
+\textit{Instructor Note: And now for a sequence of problems on variational principles: the idea is that any guess for a potential function, which satisfies the boundary conditions of the true potential, can be used to give a variational upper bound on the capacitance of an object (and thus the energy stored in it).}
+\newline
+\newline
+\begin{problem}[1.17 (10 points)] 
+
+A volume $V$ in vacuum is bounded by a surface $S$ consisting of several separate conducting surfaces $S_i$. One conductor is held at \textit{unit} potential and all the other conductors at zero potential.
+\begin{enumerate}[(a)]
+
+\item (5 points) Show that the capacitance of the one conductor is given by
+$$ C = \epsilon_0 \int_V |\nabla \Phi| ^2\ d^3x $$
+where $\Phi(\mathbf{x})$ is the solution for the potential.
+
+\item (5 points) Show that the true capacitance $C$ is always less than or equal to the quantity
+$$ C(\Psi) = \epsilon_0 \int_V |\nabla \Psi |^2\ d^3x $$
+where $\Psi$ is any trial function satisfying the boundary conditions on the conductors. This is a variational principle for the capacitance that yields an \textit{upper bound}.
+
+\end{enumerate}
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\newpage
+
+\begin{problem}[1.19 (10 points)] 
+
+For the cylindrical capacitor of Problem 1.6 (c) \textit{(Editor Note: see below)}, evaluate the variational upper bound of Problem 1.17 (b) with the naive trial function, $\Psi_1(\rho) = (b-\rho)/(b-a)$. Compare the variational result with the exact result for $b/a = 1.5, 2, 3$. Explain the trend of your results in terms of the functional form of $\Psi_1$. An improved trial function is treated by \textit{Collin} (pp. 275-277).
+\newline
+\newline
+\textit{Instructor Note: For this problem, also consider the cases} b/a = 10, 100, 1.1 \textit{and} 1.01. \textit{Compare the functional form of your result to the analytic result, at small} (b/a - 1). \textit{The point of this exercise is that there is a limit where your variational guess is nearly exact, and you can quantify its non-exactness - a very useful thing to know.}
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\newpage
+
+\begin{problem}[1.6 (c)] 
+
+\textit{Editor Note: included for reference, not necessary to complete}
+\newline
+A simple capacitor is a device formed by two insulated conductors adjacent to each other. If equal and opposite charges are placed on the conductors, there will be a certain difference of potential between them. The ratio of the magnitude of the charge on one conductor to the magnitude of the potential difference is called the capacitance (in SI units it is measured in farads). Using Gauss's law, calculate the capacitance of
+
+\begin{enumerate}[(c)]
+\item two concentric conducting cylinders of length $L$, large compared to their radii $a$, $b$ $(b>a)$.
+
+\end{enumerate}
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\end{document}
+
+
+
+
+
+
+
